@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: omapi-frontend
+  labels:
+    app: omapi-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: omapi-frontend
+  template:
+    metadata:
+      labels:
+        app: omapi-frontend
+    spec:
+      containers:
+      - name: omapi-frontend-container
+        image: omapfrontend
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"
+        imagePullPolicy: Always
