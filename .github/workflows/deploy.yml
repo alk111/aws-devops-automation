@@ -24,14 +24,14 @@ jobs:
         - name: Docker Push
           uses: docker/build-push-action@v6
           with:
-            context: aws-devops-automation
-            file: Dockerfile
+            context: src/frontend
+            file: src/frontend/Dockerfile
             push: true
-            tags: ${{ secrets.DOCKER_USERNAME }}/product-catalog:${{github.run_id}}
+            tags: ${{ secrets.DOCKER_USERNAME }}/frontend:${{github.run_id}}
 
     
     updatek8s:
-        runs-on: ubuntu-latest
+        runs-on: self-hosted
 
         needs: docker
 
@@ -43,13 +43,13 @@ jobs:
 
         - name: Update tag in kubernetes deployment manifest
           run: | 
-               sed -i "s|image: .*|image: ${{ secrets.DOCKER_USERNAME }}/product-catalog:${{github.run_id}}|" kubernetes/productcatalog/deploy.yaml
+               sed -i "s|image: .*|image: ${{ secrets.DOCKER_USERNAME }}/frontend:${{github.run_id}}|" kubernetes/frontend/deploy.yaml
         
         - name: Commit and push changes
           run: |
             git config --global user.email "Khanalkaif2001@gmail.com"
             git config --global user.name "Alkaif Khan"
-            git add kubernetes/productcatalog/deploy.yaml
+            git add kubernetes/frontend/deploy.yaml
             git commit -m "[CI]: Update product catalog image tag"
             git push origin HEAD:main -f
 

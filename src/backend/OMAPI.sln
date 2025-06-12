@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMAPI", "OMAPI\OMAPI.csproj", "{B3BEE7F6-7EF3-41F2-BCBA-8B0B1122F8F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A82F01D5-11E7-41FA-9051-55E7FDFF5F7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A27811D0-95FA-4478-8A66-2CC1EF36352E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{54F834D7-0307-4514-A0DF-EC959DA39526}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrasrtucture", "Infrasrtucture", "{5E45404D-9C5F-4F3D-A089-E9C4C23F7358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMartInfra", "OMartInfra\OMartInfra.csproj", "{BFB87350-EB02-4326-8F74-A3C17642B905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMartDomain", "OMartDomain\OMartDomain.csproj", "{DF289D1B-39BF-4E75-9FAD-790685BF04EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMartApplication", "OMartApplication\OMartApplication.csproj", "{10410422-7E69-4567-A3B9-6B832B379116}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3BEE7F6-7EF3-41F2-BCBA-8B0B1122F8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BEE7F6-7EF3-41F2-BCBA-8B0B1122F8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BEE7F6-7EF3-41F2-BCBA-8B0B1122F8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BEE7F6-7EF3-41F2-BCBA-8B0B1122F8F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB87350-EB02-4326-8F74-A3C17642B905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB87350-EB02-4326-8F74-A3C17642B905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB87350-EB02-4326-8F74-A3C17642B905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB87350-EB02-4326-8F74-A3C17642B905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF289D1B-39BF-4E75-9FAD-790685BF04EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF289D1B-39BF-4E75-9FAD-790685BF04EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF289D1B-39BF-4E75-9FAD-790685BF04EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF289D1B-39BF-4E75-9FAD-790685BF04EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10410422-7E69-4567-A3B9-6B832B379116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10410422-7E69-4567-A3B9-6B832B379116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10410422-7E69-4567-A3B9-6B832B379116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10410422-7E69-4567-A3B9-6B832B379116}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A82F01D5-11E7-41FA-9051-55E7FDFF5F7C} = {A27811D0-95FA-4478-8A66-2CC1EF36352E}
+		{54F834D7-0307-4514-A0DF-EC959DA39526} = {A27811D0-95FA-4478-8A66-2CC1EF36352E}
+		{BFB87350-EB02-4326-8F74-A3C17642B905} = {5E45404D-9C5F-4F3D-A089-E9C4C23F7358}
+		{DF289D1B-39BF-4E75-9FAD-790685BF04EA} = {A82F01D5-11E7-41FA-9051-55E7FDFF5F7C}
+		{10410422-7E69-4567-A3B9-6B832B379116} = {54F834D7-0307-4514-A0DF-EC959DA39526}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB67A252-5432-41C7-BE10-051D3604ADD2}
+	EndGlobalSection
+EndGlobal
